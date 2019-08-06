@@ -1,4 +1,3 @@
-
 import 'package:english_words/english_words.dart';
 import 'package:first_flutter_app/RandomWords.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +24,7 @@ class RandomWordsState extends State<RandomWords>{
     return _buildRowItem(_suggestions[index]);
     });
   }
+
   Widget _buildRowItem(WordPair wordPair) {
     return ListTile(
       title: Text(wordPair.asPascalCase, style: _biggerFont,),
